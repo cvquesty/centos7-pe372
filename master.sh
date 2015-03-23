@@ -3,7 +3,7 @@
 # Perform a few steps first
 export PATH=$PATH:/opt/puppet/bin
 /opt/puppet/bin/puppet module install zack/r10k
-/sbin/service iptables stop
+/bin/systemctl stop  firewalld.service
 
 # Place the r10k configuration file
 cat > /var/tmp/configure_r10k.pp << 'EOF'
