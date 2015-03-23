@@ -2,12 +2,12 @@ This repo holds a stock vagrant implementation for use in consulting engagements
 
 In the rollup, I have:
 
-CentOS Linux 7
-Puppet Master with Puppet Enterprise 3.7.2
-Puppet Agents 1-3, all customized to the following three environments:
-- development
-- testing
-- production
+CentOS Linux 7<br>
+Puppet Master with Puppet Enterprise 3.7.2<br>
+Puppet Agents 1-3, all customized to the following three environments:<br>
+- development<br>
+- testing<br>
+- production<br>
 
 REQUIRED:
 To use this module with your current Vagrant Implementation, you have to install two vagrant plugins:
