@@ -2,7 +2,8 @@ This repo holds a stock vagrant implementation for use in consulting engagements
 
 In the rollup, I have:
 
-Puppet Master with Puppet Enterprise 3.7.1
+CentOS Linux 7
+Puppet Master with Puppet Enterprise 3.7.2
 Puppet Agents 1-3, all customized to the following three environments:
 - development
 - testing
@@ -28,7 +29,7 @@ word, and cannot be used as an environment name.  So, you should refrain from us
 environment.  I plan on removing it in future versions of vagrant-ss, I just have to do 
 development in-between professional services engagements.
 
-With the default installaiton of PE 3.7.1, the installer automatically creates the directory 
+With the default installaiton of PE 3.7.2, the installer automatically creates the directory 
 /etc/puppetlabs/puppet/environments/production. <strong>As a result, when r10k attempts to deploy
 to your instance, it fails because this directory already exists.  This is an artifact of the
 underlying Git operation that cannot clone to a pre-existing directory.  This is a known r10k
